@@ -1,0 +1,12 @@
+First tutorial I followed: https://medium.com/@louski/a-hans-stack-hapi-angular-node-socket-io-using-typescript-65951fdeccd8
+
+
+References: 
+    npm install doc/switch ref: https://docs.npmjs.com/cli/install 
+
+
+Issues needed to resolve:
+    when running tsc I received "The term 'tsc' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again"
+        This gave me an answer (install typescript globally worked)
+            TODO:// Read more about this
+            https://stackoverflow.com/questions/35369501/tsc-is-not-recognized-as-internal-or-external-command/47898735

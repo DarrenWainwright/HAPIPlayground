@@ -1,0 +1,13 @@
+<form class="socketForm" #lobbyForm="ngForm" (ngSubmit)="sendMessage(lobbyForm.value)">
+    <mat-form-field class='full-width'>
+
+        <input matInput placeholder="Type Your Socket Message" [(ngModel)]="socketMessage" name="socketMessage"
+        #message />
+    </mat-form-field>
+    <button mat-raised-button type="submit">Send</button>
+  </form>
+    <mat-list>
+      <mat-list-item *ngFor="let log of logs">
+        <li>{{log}}</li>
+      </mat-list-item>
+    </mat-list>

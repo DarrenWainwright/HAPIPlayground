@@ -1,4 +1,4 @@
-import * as Hapi from "Hapi";
+import * as Hapi from "hapi";
 
 export class App {
   
@@ -9,10 +9,10 @@ export class App {
     text_expressRunning = "server - server running on port: ";
     text_socketConnected = "server - socket.io connected";
 
-    constructor (private host: string){
+    constructor (private host: string, private port: number){
         this.server = new Hapi.Server({
             host: host,
-            port: 3000
+            port: port
         });
 
         this.io = require('socket.io')(this.server.listener);        

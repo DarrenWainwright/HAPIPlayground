@@ -27,6 +27,8 @@ export class SocketLobbyService {
   }
 
   sendMessage(data){
+    console.log('sendMessage');
+    console.log(data)
     this.socket.emit('sendSocketMessage', data);
   }
 }

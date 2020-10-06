@@ -20,6 +20,8 @@ export class SocketLobbyComponent implements OnInit {
   constructor(private SocketLobbyService: SocketLobbyService) { 
 
     this.SocketLobbyService.onConnectionSuccess().subscribe(data =>{
+      console.log('onConnectionSuccess().subscribe');
+      console.log(data)
       console.log(`Angular connected to Socket.io: ${data.status}`);
       this.logs.push(data.status);
     });
